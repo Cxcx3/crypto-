@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coin Flip</title>
+</head>
+<body>
+    <h2>Coin Flip Game</h2>
+    <button onclick="flipCoin()">Flip Coin</button>
+    <p id="result"></p>
+
+    <script>
+        function flipCoin() {
+            var result = Math.random() < 0.5 ? "Heads" : "Tails";
+            document.getElementById("result").innerHTML = "Result: " + result;
+        }
+    </script>
+</body>
+</html>
